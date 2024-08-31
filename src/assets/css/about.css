@@ -244,5 +244,236 @@
     background-color: rgba(0, 0, 0, 0.2); }
     body.dark-mode #why-choose-2058 .cs-services {
       background-color: rgba(0, 0, 0, 0.6); } }
+/*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #faq-1741 {
+    padding: var(--sectionPadding);
+    position: relative; }
+    #faq-1741 .cs-container {
+      width: 100%;
+      /* changes to 1280px at desktop */
+      max-width: calc(584/16 * 1rem);
+      margin: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      /* 48px - 64px */
+      gap: clamp(3rem, 6vw, 4rem); }
+    #faq-1741 .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: center;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    #faq-1741 .cs-title {
+      max-width: 15ch;
+      margin: 0 0 calc(32/16 * 1rem); }
+    #faq-1741 .cs-button-solid {
+      font-size: calc(16/16 * 1rem);
+      font-weight: 700;
+      /* 46px - 56px */
+      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+      text-align: center;
+      text-decoration: none;
+      min-width: calc(150/16 * 1rem);
+      margin: 0;
+      /* prevents padding from adding to the width */
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 0 calc(24/16 * 1rem);
+      background-color: var(--primary);
+      color: #fff;
+      display: inline-block;
+      position: relative;
+      z-index: 1; }
+      #faq-1741 .cs-button-solid:before {
+        content: "";
+        width: 0%;
+        height: 100%;
+        background: #000;
+        opacity: 1;
+        border-radius: calc(4/16 * 1rem);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        -webkit-transition: width 0.3s;
+        transition: width 0.3s; }
+      #faq-1741 .cs-button-solid:hover:before {
+        width: 100%; }
+    #faq-1741 .cs-faq-group {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      gap: calc(12/16 * 1rem); }
+    #faq-1741 .cs-faq-item {
+      list-style: none;
+      width: 100%;
+      /* clips all corners of the button that overlap the rounded border */
+      overflow: hidden;
+      -webkit-transition: border-bottom 0.3s;
+      transition: border-bottom 0.3s; }
+      #faq-1741 .cs-faq-item.active .cs-button {
+        background-color: var(--primary);
+        color: var(--bodyTextColorWhite); }
+        #faq-1741 .cs-faq-item.active .cs-button:before {
+          background-color: var(--bodyTextColorWhite);
+          -webkit-transform: rotate(315deg);
+                  transform: rotate(315deg); }
+        #faq-1741 .cs-faq-item.active .cs-button:after {
+          background-color: var(--bodyTextColorWhite);
+          -webkit-transform: rotate(-315deg);
+                  transform: rotate(-315deg); }
+      #faq-1741 .cs-faq-item.active .cs-item-text {
+        height: auto;
+        /* 16px - 24px */
+        padding: calc(16/16 * 1rem) clamp(1rem, 2vw, 1.5rem);
+        opacity: 1;
+        border: 1px solid #e8e8e8; }
+    #faq-1741 .cs-button {
+      /* 16px - 20px */
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      font-weight: bold;
+      line-height: 1.2em;
+      text-align: left;
+      width: 100%;
+      padding: calc(16/16 * 1rem);
+      padding-left: calc(52/16 * 1rem);
+      background-color: transparent;
+      color: var(--headerColor);
+      border: 1px solid #e8e8e8;
+      display: block;
+      position: relative;
+      -webkit-transition: background-color 0.3s, color 0.3s;
+      transition: background-color 0.3s, color 0.3s; }
+      #faq-1741 .cs-button:hover {
+        cursor: pointer; }
+      #faq-1741 .cs-button:before {
+        /* left line */
+        content: "";
+        width: calc(8/16 * 1rem);
+        height: calc(2/16 * 1rem);
+        background-color: var(--headerColor);
+        opacity: 1;
+        display: block;
+        position: absolute;
+        top: 45%;
+        left: calc(18/16 * 1rem);
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: -webkit-transform 0.5s;
+        transition: transform 0.5s;
+        transition: transform 0.5s, -webkit-transform 0.5s;
+        /* animate the transform from the left side of the x axis, and the center of the y */
+        -webkit-transform-origin: left center;
+                transform-origin: left center; }
+      #faq-1741 .cs-button:after {
+        /* right line */
+        content: "";
+        width: calc(8/16 * 1rem);
+        height: calc(2/16 * 1rem);
+        background-color: var(--headerColor);
+        opacity: 1;
+        display: block;
+        position: absolute;
+        top: 45%;
+        left: calc(21/16 * 1rem);
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: -webkit-transform 0.5s;
+        transition: transform 0.5s;
+        transition: transform 0.5s, -webkit-transform 0.5s;
+        /* animate the transform from the right side of the x axis, and the center of the y */
+        -webkit-transform-origin: right center;
+                transform-origin: right center; }
+    #faq-1741 .cs-item-text {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      line-height: 1.5em;
+      height: 0;
+      margin: 0;
+      /* clips the text so it doesn't show up */
+      overflow: hidden;
+      color: var(--bodyTextColor);
+      opacity: 0;
+      -webkit-transition: opacity 0.3s, padding-bottom 0.3s;
+      transition: opacity 0.3s, padding-bottom 0.3s; } }
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #faq-1741 .cs-container {
+    max-width: calc(1280/16 * 1rem);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+  #faq-1741 .cs-content {
+    text-align: left;
+    width: 40%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    /* prevents flexbox from squishing it */
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none; } }
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #faq-1741 .cs-title,
+  body.dark-mode #faq-1741 .cs-item-text {
+    color: var(--bodyTextColorWhite); }
+  body.dark-mode #faq-1741 .cs-faq-item.active .cs-button {
+    background-color: var(--primary);
+    color: var(--bodyTextColorWhite); }
+    body.dark-mode #faq-1741 .cs-faq-item.active .cs-button:before, body.dark-mode #faq-1741 .cs-faq-item.active .cs-button:after {
+      background-color: var(--bodyTextColorWhite); }
+  body.dark-mode #faq-1741 .cs-faq-item.active .cs-item-text {
+    /* 20px - 24px */
+    padding-top: clamp(1.25rem, 1.3vw, 1.5rem);
+    border-color: var(--accent); }
+  body.dark-mode #faq-1741 .cs-button {
+    color: var(--bodyTextColorWhite);
+    border-color: var(--accent); }
+    body.dark-mode #faq-1741 .cs-button:before, body.dark-mode #faq-1741 .cs-button:after {
+      background-color: var(--bodyTextColorWhite); } }
 
 /*# sourceMappingURL=about.css.map */
