@@ -63,7 +63,7 @@
             /* we put the padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */
             /* 144px - 280px - leaving extra space for the navigation */
             /* changes on tablet */
-            padding: clamp(9em, 25.95vw, 17.5em) 0;
+            padding: clamp(6em, 25.95vw, 17.5em) 0; }
 
             &:before {
                 position: absolute;
@@ -83,7 +83,7 @@
         .cs-flex-group {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: left;
             align-items: flex-start;
             margin: auto;
             /* 60px - 220px */
@@ -97,13 +97,13 @@
         .cs-topper {
             margin-bottom: calc(16 / 16 * 1rem);
             color: var(--primary);
-            text-align: center;
+            text-align: left;
         }
 
         .cs-title {
             width: 100%;
             color: var(--bodyTextColorWhite);
-            text-align: center;
+            text-align: left;
         }
 
         .cs-text {
@@ -112,7 +112,7 @@
             /* 40px - 48px */
             margin-bottom: clamp(2.5rem, 4vw, 3rem);
             color: var(--bodyTextColorWhite);
-            text-align: center;
+            text-align: left;
         }
 
         .cs-button-solid {
@@ -171,8 +171,8 @@
                 }
             }
         }
-    }
 }
+
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
