@@ -5,5 +5,5 @@ for (const item of faqItems) {
     const onClick = () => {
         item.classList.toggle('active');
     };
-    item.addEventListener('click', onClick);
+    item.addEventListener('click', onClick)
 }

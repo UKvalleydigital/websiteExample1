@@ -372,6 +372,10 @@
             overflow: hidden;
             transition: border-bottom 0.3s;
 
+            &.hover {
+                color: var(--primary);
+            }
+
             &.active {
                 .cs-button {
                     background-color: var(--primary);
@@ -417,6 +421,7 @@
 
             &:hover {
                 cursor: pointer;
+                color: var(--primary);
             }
 
             &:before {
