@@ -92,7 +92,7 @@
         .cs-flex-group {
             position: relative;
             border-radius: calc(16 / 16 * 1rem);
-            background-color: #a3a3a3;
+            background-color: #c7c7c7;
             /* 16px - 32px */
             padding: clamp(1rem, 3vw, 2rem);
         }
@@ -112,14 +112,14 @@
             font-size: calc(16 / 16 * 1rem);
             line-height: 1.2em;
             font-weight: bold;
-            color: var(--headerColor);
+            color: #fff;
         }
 
         .cs-job {
             display: block;
             font-size: calc(14 / 16 * 1rem);
             line-height: 1.5em;
-            color: #353535;
+            color: #fff;
         }
 
         .cs-quote-icon {
@@ -428,10 +428,6 @@
             justify-content: center;
             align-items: center;
             gap: calc(80/16 * 1rem);
-            
-            .cs-topper {
-                color: var(--primary);
-            }
         }
 
         .cs-content {
@@ -451,7 +447,10 @@
         }
 
         .cs-topper {
-            color: var(--secondary);
+            color: var(--primary);
+            margin: 0 auto;
+            width: fit-content;
+            padding-bottom: 2rem;
         }
 
         .cs-button-solid {
@@ -497,7 +496,7 @@
             height: calc(680/16 * 1em);
             box-sizing: border-box;
             overflow: hidden;
-            border-radius: calc(260/16 * 1rem);
+            border-radius: calc(100/16 * 1rem);
             position: absolute;
             right: 0;
             z-index: -1;
@@ -521,7 +520,7 @@
         .cs-leaf {
             width: calc(175/16 * 1em);
             height: auto;
-            bottom: calc(16/16 * 1em);
+            bottom: calc(1/16 * 1em);
             left: 0;
         }
 
@@ -776,7 +775,9 @@
         .cs-title {
             margin-bottom: calc(40 / 16 * 1rem);
             max-width: calc(621 / 16 * 1rem);
-            text-align: center;
+            text-align: left;
+            margin-left: calc(60 / 16 * 1rem);
+
         }
 
         .cs-image-group {
