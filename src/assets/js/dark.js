@@ -5,10 +5,12 @@
 // helper functions to toggle dark mode
 function enableDarkMode() {
 	document.body.classList.add('dark-mode');
+	document.querySelector('.cs-logo > img').src = '../../assets/images/logo-dark.png';
 	localStorage.setItem('theme', 'dark');
 }
 function disableDarkMode() {
 	document.body.classList.remove('dark-mode');
+	document.querySelector('.cs-logo > img').src = '../../assets/images/logo.png';
 	localStorage.setItem('theme', 'light');
 }
 

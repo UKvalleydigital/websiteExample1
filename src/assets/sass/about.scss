@@ -398,6 +398,7 @@
                     padding: calc(16/16 * 1rem) clamp(1rem, 2vw, 1.5rem);
                     opacity: 1;
                     border: 1px solid #e8e8e8;
+                    border-radius: clamp(1rem, 3vw, 2rem);
                 }
             }
         }
