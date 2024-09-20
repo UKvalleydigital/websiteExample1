@@ -10,7 +10,7 @@ function enableDarkMode() {
 }
 function disableDarkMode() {
 	document.body.classList.remove('dark-mode');
-	document.querySelector('.cs-logo > img').src = '../../assets/images/logo.png';
+	document.querySelector('.cs-logo > img').src = '../../assets/images/logo.png'
 	localStorage.setItem('theme', 'light');
 }
 

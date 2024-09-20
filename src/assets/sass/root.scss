@@ -346,7 +346,6 @@
         }
 
         .cs-logo {
-            z-index: 10;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -589,11 +588,6 @@
     body.dark-mode {
         #cs-navigation {
             background-color: var(--dark);
-
-            .cs-logo {
-                /* makes it white */
-                filter: grayscale(1) brightness(1000%);
-            }
 
             .cs-line {
                 background-color: #fff;
@@ -839,6 +833,14 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
+        .cs-logo {
+            border: 1px solid #5FD5D9;
+
+            img {
+                padding: 3px;
+            }
+        }
+
         #cs-navigation {
             .cs-drop-ul {
                 background-color: var(--dark);
@@ -855,6 +857,19 @@
             .cs-drop-icon {
                 /* turns it white */
                 filter: grayscale(1) brightness(1000%);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body.dark-mode {
+        .cs-logo {
+            border: 1px solid #5FD5D9;
+            max-width: 185px;
+            
+            img {
+                padding: 3px;
             }
         }
     }
@@ -900,7 +915,6 @@
             /* margin-right auto pushes everything away from it to the right */
             margin: 0 auto 0 0;
             height: calc(65 / 16 * 1rem);
-            max-width: calc(350 / 16 * 1rem);
             width: 18.4%;
             padding: 0;
 
@@ -973,11 +987,6 @@
     body.dark-mode {
         #cs-navigation {
             background-color: var(--dark);
-
-            .cs-logo {
-                /* makes it turn white */
-                filter: grayscale(1) brightness(1000%);
-            }
 
             .cs-li-link {
                 color: var(--bodyTextColorWhite);
