@@ -243,12 +243,12 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #dark-mode-toggle {
-            .cs-sun {
+            .cs-sun, .cs-logo-img {
                 opacity: 1;
                 transform: translate(-50%, -50%);
             }
 
-            .cs-moon {
+            .cs-moon, .cs-logo-img {
                 opacity: 0;
                 transform: translate(-50%, -150%);
                 fill: #fff;
@@ -281,7 +281,7 @@
             pointer-events: none;
         }
 
-        .cs-moon {
+        .cs-moon, .cs-logo-img {
             z-index: 2;
             // Transition properties
             transition: transform 0.3s, opacity 0.3s;
@@ -289,7 +289,7 @@
             // fill: yellow; --> uncomment to change the color of the moon if needed
         }
 
-        .cs-sun {
+        .cs-sun, .cs-logo-img  {
             z-index: 1;
             opacity: 0;
             // Transition property
