@@ -14,7 +14,7 @@
 </p>
 
 ## About the website
-The website has five pages - a home, about, review, blog and contact page. The blog can be accessed via a hidden admin page and through logging in. It will only log in for accounts that we have chosen.
+The website has five pages - a home, about, review, blog and contact page. The blog can be accessed via a hidden admin page and through logging in. It will only log in for specific accounts (e.g. the client's).
 
 ## Link
 It is currently being hosted at https://garden-club-hereford.netlify.app
